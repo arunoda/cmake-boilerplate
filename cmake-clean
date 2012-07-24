@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#clean project folder
+rm CMakeCache.txt
+rm Makefile
+rm CMakeFiles -rf
+rm Testing -rf
+rm cmake_install.cmake
+rm CTestTestfile.cmake 2> /dev/null
+
+#clean src folder
+rm src/Makefile
+rm src/CMakeFiles -rf
+rm src/cmake_install.cmake
+rm src/CTestTestfile.cmake 2> /dev/null
+
+#clean test folder
+rm tests/Makefile
+rm tests/CMakeFiles -rf
+rm tests/cmake_install.cmake
+rm tests/CTestTestfile.cmake 2> /dev/null
